@@ -33,14 +33,20 @@ public class Variables {
 
         double resultDouble = firstNumber / secondNumber;
         System.out.println(resultDouble);
-        // in questo caso stamperà 2.0 poichè effettua prima la divisione intera e poi viene
-        // inserito in una variabile double
+        /* in questo caso stamperà 2.0 poichè effettua prima la divisione intera e poi viene
+         inserito in una variabile double */
         double finalResult = (double) firstNumber / (double) secondNumber;
         System.out.println(finalResult);
 
         String stringFinalResult = String.valueOf(finalResult);
         System.out.println("la stringa di finalResult è " + stringFinalResult);
 
+        // classi wrapper
+        int myIntero = 5;
+        Integer myTupac = Integer.valueOf(myIntero);
+        System.out.println(myTupac);
+
+        Boolean b1 = Boolean.FALSE;
     }
 
 }
