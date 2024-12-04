@@ -30,7 +30,7 @@ public class Calcolatrice {
                             "% per il modulo");
         // catturo l'operatore scelto
         String operatore = input.next();
-        // a seconda dell'input eseguo l'operazione
+        /* a seconda dell'input eseguo l'operazione
         if (operatore.equals("+")) {
             int somma = primoNumero + secondoNumero;
             System.out.println(primoNumero + " + " + secondoNumero + " = " + somma);
@@ -50,8 +50,32 @@ public class Calcolatrice {
         } else {
             System.out.println("SEI UN FAGIANO! RIPROVA POLLO");
             calcolatrice();
+        } */
+        switch (operatore) {
+            case "+":
+                int somma = primoNumero + secondoNumero;
+                System.out.println(primoNumero + " + " + secondoNumero + " = " + somma);
+                break;
+            case "-":
+                int sottrazione = primoNumero - secondoNumero;
+                System.out.println(primoNumero + " - " + secondoNumero + " = " + sottrazione);
+                break;
+            case "*":
+                int mult = primoNumero * secondoNumero;
+                System.out.println(primoNumero + " * " + secondoNumero + " = " + mult);
+                break;
+            case "/":
+                double divisione = (double) primoNumero / (double) secondoNumero;
+                System.out.println(primoNumero + " / " + secondoNumero + " = " + divisione);
+                break;
+            case "%":
+                int resto = primoNumero % secondoNumero;
+                System.out.println(primoNumero + " % " + secondoNumero + " = " + resto);
+                break;
+            default:
+                System.out.println("SEI UN FAGIANO! RIPROVA POLLO");
+                calcolatrice();
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {

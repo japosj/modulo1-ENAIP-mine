@@ -19,6 +19,14 @@ public class Fattoriale {
         }
     }
 
+    /*
+    ALGORITMO:
+    i = 2, result = 1 * 2 = 2
+    i = 3, result = 2 * 3 = 6
+    i = 4, result = 6 * 4 = 24
+    ecc.
+     */
+
     public static void main(String[] args) {
         System.out.println("il fattoriale di " + 10 + " è " + fattoriale(10));
     }
